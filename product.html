@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata of the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products - My E-Commerce Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Our Products</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="trending.html">Trending</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section for the list of products -->
+    <section class="product-list">
+        <!-- Individual product elements -->
+        <div class="product">
+            <img src="fridge.jpg" alt="Product 3">
+            <p>Mini Fridge</p>
+        </div>
+        <div class="product">
+            <img src="tv.jpg" alt="Product 4">
+            <p>Flat Screen TV</p>
+        </div>
+        <!-- More products here -->
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <!-- Fieldset 1 -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Text Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Phone Input -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </fieldset>
+    
+            <!-- Fieldset 2 -->
+            <fieldset>
+                <legend>Message</legend>
+                <!-- Textarea for message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </fieldset>
+    
+            <!-- Buttons -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        &copy; 2023 My E-Commerce Store
+    </footer>
+</body>
+</html>
+
+
+

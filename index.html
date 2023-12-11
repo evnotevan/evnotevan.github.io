@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata of the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My E-Commerce Store</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="trending.html">Trending</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section for featured products -->
+    <section>
+        <h2>Featured Products</h2>
+        <!-- Individual product elements -->
+        <div class="product">
+            <img src="ps5.jpg" alt="Product 1">
+            <p>PlayStation 5</p>
+        </div>
+        <div class="product">
+            <img src="xbox.jpg" alt="Product 2">
+            <p>Xbox Series X/S</p>
+        </div>
+    </section>
+
+    <!-- About Us section -->
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to our online store. We offer a wide range of products for all your needs.</p>
+        <p>For more information, contact us at info@example.com</p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        &copy; 2023 My E-Commerce Store
+    </footer>
+    <!-- Section for a contact form -->
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <!-- Fieldset 1 -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Text Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Phone Input -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </fieldset>
+    
+            <!-- Fieldset 2 -->
+            <fieldset>
+                <legend>Message</legend>
+                <!-- Textarea for message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </fieldset>
+    
+            <!-- Buttons -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
+
+
+
+

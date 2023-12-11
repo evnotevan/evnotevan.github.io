@@ -1,0 +1,81 @@
+/* Styles for layout.html */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.positioned-element {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Media Query for Mobile Design */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+    .product {
+        width: 100%;
+    }
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+    .product {
+        width: 100%;
+    }
+
+    /* Flexbox for responsive layout */
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        flex: 1 1 calc(50% - 20px);
+        margin: 10px;
+    }
+
+    /* Styles for pulldown menu */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px;
+    }
+
+    nav a {
+        color: #fff;
+    }
+
+    /* Show the menu when a button is clicked */
+    nav.active ul {
+        display: block;
+    }
+}
