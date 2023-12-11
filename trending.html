@@ -19,6 +19,72 @@
     </style>
 </head>
 <body>
+     <script>
+// script.js
+function trackDateTime() {
+    const currentDate = new Date();
+    console.log(`Current Date and Time: ${currentDate}`);
+}
+
+function showAlert() {
+    alert('This is an alert!');
+}
+
+function useMathMethod() {
+    const randomNumber = Math.floor(Math.random() * 100);
+    console.log(`Random Number: ${randomNumber}`);
+}
+
+function delayedCommand() {
+    console.log('This command is delayed.');
+}
+
+function convertNumberToText() {
+    const number = 42;
+    const text = number.toString();
+    console.log(`Number: ${number}, Text: ${text}`);
+}
+
+function countdown(seconds) {
+    let currentSeconds = seconds;
+    const intervalId = setInterval(() => {
+        console.log(`${currentSeconds} seconds remaining`);
+        if (currentSeconds === 0) {
+            console.log('Countdown complete!');
+            clearInterval(intervalId);
+        } else {
+            currentSeconds--;
+        }
+    }, 1000);
+}
+
+// Function to update the clock
+function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initial call to display the clock immediately
+updateClock();
+
+// Call other functions
+trackDateTime();
+showAlert();
+useMathMethod();
+setTimeout(delayedCommand, 2000); // Delayed command after 2 seconds
+convertNumberToText();
+countdown(5); // Countdown for 5 seconds
+
+    </script>
+    <div id="clock">Loading...</div>
+
     <!-- Header section -->
     <header>
         <h1>Trending</h1>
