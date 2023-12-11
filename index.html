@@ -7,60 +7,36 @@
     <title>My E-Commerce Store</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src = "script.js"> </script>
+     <style>
+        #clock {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-     <script src = "script.js"> </script>
     <script>
-<script>
-        // JavaScript functions
-        function trackDateTime() {
-            const currentDate = new Date();
-            console.log(`Current Date and Time: ${currentDate}`);
-        }
+        // script.js
+function updateClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
 
-        function showAlert() {
-            alert('This is an alert!');
-        }
+// Update the clock every second
+setInterval(updateClock, 1000);
 
-        function useMathMethod() {
-            const randomNumber = Math.floor(Math.random() * 100);
-            console.log(`Random Number: ${randomNumber}`);
-        }
+// Initial call to display the clock immediately
+updateClock();
 
-        function delayedCommand() {
-            console.log('This command is delayed.');
-        }
-
-        function convertNumberToText() {
-            const number = 42;
-            const text = number.toString();
-            console.log(`Number: ${number}, Text: ${text}`);
-        }
-
-        function countdown(seconds) {
-            let currentSeconds = seconds;
-            const intervalId = setInterval(() => {
-                console.log(`${currentSeconds} seconds remaining`);
-                if (currentSeconds === 0) {
-                    console.log('Countdown complete!');
-                    clearInterval(intervalId);
-                } else {
-                    currentSeconds--;
-                }
-            }, 1000);
-        }
-
-        // Call the functions
-        trackDateTime();
-        showAlert();
-        useMathMethod();
-        setTimeout(delayedCommand, 2000); // Delayed command after 2 seconds
-        convertNumberToText();
-        countdown(5); // Countdown for 5 seconds
     </script>
+    <div id="clock">Loading...</div>
 
- <div id = "digital-clock">     <p>The current time is: <time datetime="2023-12-01T12:34:56">12:34 PM</time></p>
-</div>
     <!-- Header section -->
     <header>
         <h1>Welcome to My E-Commerce Store</h1>
